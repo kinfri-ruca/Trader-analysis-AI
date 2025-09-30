@@ -1,0 +1,8 @@
+trader_id,name,join_date,trading_style,risk_tolerance,preferred_sectors,years_experience,education,certifications,account_size,performance_goal
+T001,김민수,2022-03-15,단기매매,중위험,기술/반도체,3,서울대 경영학,CFA Level 2,250000,15% annual return
+T002,이서연,2021-08-20,중기투자,저위험,기술/소비재,4,연세대 경제학,CFA Charter,500000,12% annual return
+T003,박준호,2020-11-10,단기매매,고위험,기술/자동차,5,고려대 통계학,CMT,400000,25% annual return
+T004,정수진,2023-01-05,중기투자,중위험,기술/헬스케어,2,KAIST 산업공학,Series 7,300000,18% annual return
+T005,최동욱,2022-06-18,단기매매,고위험,기술/금융,3,성균관대 수학,CFA Level 1,350000,30% annual return
+T006,강지혜,2021-04-12,장기투자,저위험,소비재/헬스케어,4,이화여대 통계학,CPA,450000,10% annual return
+T007,조민호,2022-09-01,중기투자,중위험,미디어/항공,3,한양대 경영학,Series 7,280000,20% annual return

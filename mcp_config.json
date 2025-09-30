@@ -1,0 +1,11 @@
+{
+  "server": "desktop-commander",
+  "data_directory": "data",
+  "watch_files": [
+    "trading_transactions_enhanced.csv",
+    "trader_profiles_enhanced.csv",
+    "analysis_results.json"
+  ],
+  "auto_refresh": true,
+  "refresh_interval": 60
+}

@@ -1,0 +1,51 @@
+﻿trader_id,name,join_date,trading_style,risk_tolerance,preferred_sectors,years_experience,education,certifications,account_size,performance_goal
+T001,최서연,2020-10-01,단기매매,저위험,통신,5,서울대,CFA Level 1,409588,23% annual return
+T002,이서연,2023-10-01,단기매매,저위험,에너지,2,서울대,CFA Level 2,475400,30% annual return
+T003,송시윤,2021-10-01,중기투자,중위험,기술/반도체,4,KAIST,None,278389,18% annual return
+T004,정지민,2019-10-02,단기매매,저위험,기술/반도체,6,연세대,CFA Level 3,416526,18% annual return
+T005,이지안,2017-10-02,단기매매,고위험,소비재,8,서울대,CFA Level 3,429588,29% annual return
+T006,오준우,2021-10-01,스윙트레이딩,저위험,통신,4,KAIST,CFA Level 3,141833,17% annual return
+T007,최도현,2020-10-01,중기투자,중위험,헬스케어,5,KAIST,CFA Level 3,286264,16% annual return
+T008,장민재,2023-10-01,단기매매,중위험,금융/은행,2,KAIST,None,298943,18% annual return
+T009,송건우,2019-10-02,단기매매,저위험,기술/반도체,6,연세대,None,240373,12% annual return
+T010,조준우,2019-10-02,중기투자,중위험,소비재,6,부산대,None,174905,18% annual return
+T011,정지아,2016-10-02,장기투자,중위험,소비재,9,경북대,None,289790,17% annual return
+T012,정지후,2017-10-02,단기매매,중위험,기술/반도체,8,KAIST,CFA Level 2,456768,23% annual return
+T013,홍도윤,2018-10-02,스윙트레이딩,중위험,소비재,7,경북대,CFA Level 3,390049,10% annual return
+T014,최나은,2016-10-02,장기투자,중위험,헬스케어,9,서울대,CFA Level 3,327942,15% annual return
+T015,권민준,2020-10-01,스윙트레이딩,중위험,에너지,5,서울대,CFA Level 3,434993,26% annual return
+T016,홍주원,2022-10-01,중기투자,중위험,에너지,3,경북대,CFA Level 1,414019,20% annual return
+T017,황서연,2023-10-01,스윙트레이딩,고위험,헬스케어,2,KAIST,CFA Level 1,226286,28% annual return
+T018,박수아,2017-10-02,단기매매,고위험,에너지,8,KAIST,CFA Level 2,445899,25% annual return
+T019,송준서,2020-10-01,스윙트레이딩,고위험,소비재,5,KAIST,CFA Level 2,473790,19% annual return
+T020,서우진,2019-10-02,스윙트레이딩,고위험,소비재,6,서울대,CFA Level 2,217806,12% annual return
+T021,한서연,2015-10-03,중기투자,중위험,기술/반도체,10,서울대,CFA Level 1,220031,12% annual return
+T022,이소율,2023-10-01,단기매매,저위험,소비재,2,KAIST,CFA Level 2,479245,28% annual return
+T023,전민서,2021-10-01,중기투자,고위험,금융/은행,4,서울대,CFA Level 1,445496,23% annual return
+T024,오서우,2018-10-02,스윙트레이딩,고위험,기술/반도체,7,부산대,CFA Level 1,131778,22% annual return
+T025,한시우,2021-10-01,단기매매,저위험,소비재,4,KAIST,None,196200,18% annual return
+T026,권지아,2023-10-01,스윙트레이딩,고위험,에너지,2,서울대,CFA Level 1,441911,27% annual return
+T027,김수아,2021-10-01,단기매매,중위험,소비재,4,KAIST,None,130741,15% annual return
+T028,서민준,2018-10-02,장기투자,고위험,소비재,7,연세대,None,465214,27% annual return
+T029,황서현,2021-10-01,중기투자,저위험,기술/반도체,4,경북대,CFA Level 1,492154,20% annual return
+T030,이하은,2015-10-03,스윙트레이딩,중위험,에너지,10,KAIST,CFA Level 1,366248,12% annual return
+T031,강도윤,2015-10-03,단기매매,중위험,금융/은행,10,고려대,CFA Level 1,398673,17% annual return
+T032,전시원,2024-09-30,단기매매,중위험,에너지,1,경북대,CFA Level 3,236716,16% annual return
+T033,한지아,2020-10-01,중기투자,저위험,통신,5,연세대,None,265767,12% annual return
+T034,김지환,2015-10-03,단기매매,저위험,금융/은행,10,경북대,CFA Level 3,169445,21% annual return
+T035,박지아,2019-10-02,장기투자,저위험,에너지,6,부산대,CFA Level 3,420695,30% annual return
+T036,안민준,2016-10-02,장기투자,고위험,기술/반도체,9,KAIST,CFA Level 3,160517,13% annual return
+T037,송서현,2020-10-01,중기투자,중위험,통신,5,연세대,CFA Level 2,460446,30% annual return
+T038,장지후,2017-10-02,장기투자,고위험,기술/반도체,8,서울대,None,245060,11% annual return
+T039,김소율,2022-10-01,스윙트레이딩,고위험,금융/은행,3,부산대,None,389239,23% annual return
+T040,송민준,2023-10-01,단기매매,고위험,통신,2,KAIST,CFA Level 1,293575,28% annual return
+T041,송서현,2018-10-02,중기투자,저위험,헬스케어,7,서울대,CFA Level 3,210140,17% annual return
+T042,최준혁,2016-10-02,스윙트레이딩,고위험,통신,9,KAIST,CFA Level 2,185197,15% annual return
+T043,신서연,2022-10-01,스윙트레이딩,고위험,소비재,3,부산대,CFA Level 2,239883,15% annual return
+T044,최도현,2024-09-30,스윙트레이딩,저위험,소비재,1,연세대,CFA Level 3,219325,17% annual return
+T045,김우진,2021-10-01,중기투자,중위험,기술/반도체,4,연세대,CFA Level 3,436321,26% annual return
+T046,서나은,2016-10-02,장기투자,고위험,기술/반도체,9,연세대,CFA Level 2,404396,18% annual return
+T047,이시우,2015-10-03,스윙트레이딩,중위험,헬스케어,10,고려대,CFA Level 1,301953,28% annual return
+T048,조유준,2024-09-30,스윙트레이딩,저위험,에너지,1,부산대,CFA Level 2,290956,23% annual return
+T049,박우진,2019-10-02,장기투자,중위험,기술/반도체,6,부산대,CFA Level 3,365878,19% annual return
+T050,신지호,2018-10-02,장기투자,중위험,금융/은행,7,고려대,None,455109,15% annual return

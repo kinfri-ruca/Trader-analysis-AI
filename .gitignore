@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Logs
+*.log
+chatbot_debug.log
+
+# Data (optional - 배포 시 포함할지 결정)
+# data/*.csv
+# data/*.json
+
+# Backup
+backups/
+docs/
+
+# Test
+test_*.py
+*_test.py
+
+mvp*.md
+

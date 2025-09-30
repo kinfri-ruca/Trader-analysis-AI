@@ -1,0 +1,418 @@
+{
+  "T001": {
+    "profile": {
+      "trader_id": "T001",
+      "name": "김민수",
+      "join_date": "2022-03-15",
+      "trading_style": "단기매매",
+      "risk_tolerance": "중위험",
+      "preferred_sectors": "기술/반도체",
+      "years_experience": 3,
+      "education": "서울대 경영학",
+      "certifications": "CFA Level 2",
+      "account_size": 250000,
+      "performance_goal": "15% annual return"
+    },
+    "performance": {
+      "trader_id": "T001",
+      "total_trades": 6,
+      "win_rate": 83.33,
+      "winning_trades": 5,
+      "losing_trades": 1,
+      "total_pnl": 5083.6,
+      "avg_return_pct": 3.6,
+      "avg_win": 1102.3,
+      "avg_loss": 427.9,
+      "profit_factor": 2.58,
+      "sharpe_ratio": 8.21,
+      "max_drawdown": -427.9,
+      "max_drawdown_pct": -8.42,
+      "avg_hold_days": 6.5,
+      "top_symbols": {
+        "AAPL": 1,
+        "MSFT": 1,
+        "GOOGL": 1,
+        "NVDA": 1,
+        "TSLA": 1,
+        "META": 1
+      }
+    },
+    "pattern": {
+      "trader_id": "T001",
+      "hourly_distribution": {
+        "9": 3,
+        "14": 2,
+        "10": 2,
+        "15": 2,
+        "11": 1,
+        "13": 1,
+        "16": 1
+      },
+      "weekly_distribution": {
+        "Thursday": 4,
+        "Friday": 3,
+        "Monday": 3,
+        "Tuesday": 2
+      },
+      "avg_position_size": 16967.83,
+      "most_active_hour": 9,
+      "most_active_day": "Thursday"
+    }
+  },
+  "T002": {
+    "profile": {
+      "trader_id": "T002",
+      "name": "이서연",
+      "join_date": "2021-08-20",
+      "trading_style": "중기투자",
+      "risk_tolerance": "저위험",
+      "preferred_sectors": "기술/소비재",
+      "years_experience": 4,
+      "education": "연세대 경제학",
+      "certifications": "CFA Charter",
+      "account_size": 500000,
+      "performance_goal": "12% annual return"
+    },
+    "performance": {
+      "trader_id": "T002",
+      "total_trades": 7,
+      "win_rate": 100.0,
+      "winning_trades": 7,
+      "losing_trades": 0,
+      "total_pnl": 5608.2,
+      "avg_return_pct": 4.57,
+      "avg_win": 801.17,
+      "avg_loss": 0,
+      "profit_factor": 0,
+      "sharpe_ratio": 16.17,
+      "max_drawdown": 0.0,
+      "max_drawdown_pct": 0.0,
+      "avg_hold_days": 9.3,
+      "top_symbols": {
+        "AAPL": 1,
+        "MSFT": 1,
+        "GOOGL": 1,
+        "NVDA": 1,
+        "AMZN": 1,
+        "JPM": 1,
+        "UNH": 1
+      }
+    },
+    "pattern": {
+      "trader_id": "T002",
+      "hourly_distribution": {
+        "9": 3,
+        "10": 3,
+        "14": 3,
+        "15": 2,
+        "11": 1,
+        "13": 1,
+        "16": 1
+      },
+      "weekly_distribution": {
+        "Monday": 4,
+        "Wednesday": 3,
+        "Tuesday": 2,
+        "Friday": 2,
+        "Thursday": 2,
+        "Sunday": 1
+      },
+      "avg_position_size": 19227.18,
+      "most_active_hour": 9,
+      "most_active_day": "Monday"
+    }
+  },
+  "T003": {
+    "profile": {
+      "trader_id": "T003",
+      "name": "박준호",
+      "join_date": "2020-11-10",
+      "trading_style": "단기매매",
+      "risk_tolerance": "고위험",
+      "preferred_sectors": "기술/자동차",
+      "years_experience": 5,
+      "education": "고려대 통계학",
+      "certifications": "CMT",
+      "account_size": 400000,
+      "performance_goal": "25% annual return"
+    },
+    "performance": {
+      "trader_id": "T003",
+      "total_trades": 7,
+      "win_rate": 100.0,
+      "winning_trades": 7,
+      "losing_trades": 0,
+      "total_pnl": 4900.7,
+      "avg_return_pct": 4.16,
+      "avg_win": 700.1,
+      "avg_loss": 0,
+      "profit_factor": 0,
+      "sharpe_ratio": 22.1,
+      "max_drawdown": 0.0,
+      "max_drawdown_pct": 0.0,
+      "avg_hold_days": 7.4,
+      "top_symbols": {
+        "TSLA": 1,
+        "NVDA": 1,
+        "AAPL": 1,
+        "MSFT": 1,
+        "GOOGL": 1,
+        "AMD": 1,
+        "COIN": 1
+      }
+    },
+    "pattern": {
+      "trader_id": "T003",
+      "hourly_distribution": {
+        "10": 3,
+        "15": 3,
+        "9": 3,
+        "14": 3,
+        "11": 1,
+        "13": 1
+      },
+      "weekly_distribution": {
+        "Tuesday": 8,
+        "Thursday": 2,
+        "Monday": 2,
+        "Friday": 1,
+        "Wednesday": 1
+      },
+      "avg_position_size": 20008.0,
+      "most_active_hour": 10,
+      "most_active_day": "Tuesday"
+    }
+  },
+  "T004": {
+    "profile": {
+      "trader_id": "T004",
+      "name": "정수진",
+      "join_date": "2023-01-05",
+      "trading_style": "중기투자",
+      "risk_tolerance": "중위험",
+      "preferred_sectors": "기술/헬스케어",
+      "years_experience": 2,
+      "education": "KAIST 산업공학",
+      "certifications": "Series 7",
+      "account_size": 300000,
+      "performance_goal": "18% annual return"
+    },
+    "performance": {
+      "trader_id": "T004",
+      "total_trades": 7,
+      "win_rate": 100.0,
+      "winning_trades": 7,
+      "losing_trades": 0,
+      "total_pnl": 4940.5,
+      "avg_return_pct": 4.21,
+      "avg_win": 705.79,
+      "avg_loss": 0,
+      "profit_factor": 0,
+      "sharpe_ratio": 17.33,
+      "max_drawdown": 0.0,
+      "max_drawdown_pct": 0.0,
+      "avg_hold_days": 7.1,
+      "top_symbols": {
+        "MSFT": 1,
+        "AAPL": 1,
+        "NVDA": 1,
+        "GOOGL": 1,
+        "AMZN": 1,
+        "V": 1,
+        "JNJ": 1
+      }
+    },
+    "pattern": {
+      "trader_id": "T004",
+      "hourly_distribution": {
+        "9": 3,
+        "14": 3,
+        "10": 3,
+        "15": 2,
+        "11": 1,
+        "13": 1,
+        "16": 1
+      },
+      "weekly_distribution": {
+        "Thursday": 6,
+        "Tuesday": 2,
+        "Friday": 2,
+        "Wednesday": 2,
+        "Monday": 1,
+        "Saturday": 1
+      },
+      "avg_position_size": 20792.87,
+      "most_active_hour": 9,
+      "most_active_day": "Thursday"
+    }
+  },
+  "T005": {
+    "profile": {
+      "trader_id": "T005",
+      "name": "최동욱",
+      "join_date": "2022-06-18",
+      "trading_style": "단기매매",
+      "risk_tolerance": "고위험",
+      "preferred_sectors": "기술/금융",
+      "years_experience": 3,
+      "education": "성균관대 수학",
+      "certifications": "CFA Level 1",
+      "account_size": 350000,
+      "performance_goal": "30% annual return"
+    },
+    "performance": {
+      "trader_id": "T005",
+      "total_trades": 7,
+      "win_rate": 57.14,
+      "winning_trades": 4,
+      "losing_trades": 3,
+      "total_pnl": 1359.1,
+      "avg_return_pct": -2.5,
+      "avg_win": 641.7,
+      "avg_loss": 402.57,
+      "profit_factor": 1.59,
+      "sharpe_ratio": -4.64,
+      "max_drawdown": -669.8,
+      "max_drawdown_pct": -33.01,
+      "avg_hold_days": 7.7,
+      "top_symbols": {
+        "NVDA": 1,
+        "TSLA": 1,
+        "AAPL": 1,
+        "MSFT": 1,
+        "GOOGL": 1,
+        "RIVN": 1,
+        "PLTR": 1
+      }
+    },
+    "pattern": {
+      "trader_id": "T005",
+      "hourly_distribution": {
+        "10": 3,
+        "15": 3,
+        "9": 3,
+        "14": 2,
+        "13": 1,
+        "11": 1,
+        "16": 1
+      },
+      "weekly_distribution": {
+        "Wednesday": 5,
+        "Thursday": 3,
+        "Friday": 2,
+        "Tuesday": 2,
+        "Saturday": 1,
+        "Monday": 1
+      },
+      "avg_position_size": 16234.37,
+      "most_active_hour": 10,
+      "most_active_day": "Wednesday"
+    }
+  },
+  "T006": {
+    "profile": {
+      "trader_id": "T006",
+      "name": "강지혜",
+      "join_date": "2021-04-12",
+      "trading_style": "장기투자",
+      "risk_tolerance": "저위험",
+      "preferred_sectors": "소비재/헬스케어",
+      "years_experience": 4,
+      "education": "이화여대 통계학",
+      "certifications": "CPA",
+      "account_size": 450000,
+      "performance_goal": "10% annual return"
+    },
+    "performance": {
+      "trader_id": "T006",
+      "total_trades": 4,
+      "win_rate": 100.0,
+      "winning_trades": 4,
+      "losing_trades": 0,
+      "total_pnl": 3120.4,
+      "avg_return_pct": 2.74,
+      "avg_win": 780.1,
+      "avg_loss": 0,
+      "profit_factor": 0,
+      "sharpe_ratio": 48.25,
+      "max_drawdown": 0.0,
+      "max_drawdown_pct": 0.0,
+      "avg_hold_days": 14.0,
+      "top_symbols": {
+        "BRK.B": 1,
+        "WMT": 1,
+        "PG": 1,
+        "KO": 1
+      }
+    },
+    "pattern": {
+      "trader_id": "T006",
+      "hourly_distribution": {
+        "9": 2,
+        "14": 2,
+        "10": 2,
+        "15": 2
+      },
+      "weekly_distribution": {
+        "Wednesday": 6,
+        "Friday": 2
+      },
+      "avg_position_size": 29598.25,
+      "most_active_hour": 9,
+      "most_active_day": "Wednesday"
+    }
+  },
+  "T007": {
+    "profile": {
+      "trader_id": "T007",
+      "name": "조민호",
+      "join_date": "2022-09-01",
+      "trading_style": "중기투자",
+      "risk_tolerance": "중위험",
+      "preferred_sectors": "미디어/항공",
+      "years_experience": 3,
+      "education": "한양대 경영학",
+      "certifications": "Series 7",
+      "account_size": 280000,
+      "performance_goal": "20% annual return"
+    },
+    "performance": {
+      "trader_id": "T007",
+      "total_trades": 4,
+      "win_rate": 75.0,
+      "winning_trades": 3,
+      "losing_trades": 1,
+      "total_pnl": 1826.9,
+      "avg_return_pct": 1.41,
+      "avg_win": 848.43,
+      "avg_loss": 718.4,
+      "profit_factor": 1.18,
+      "sharpe_ratio": 4.29,
+      "max_drawdown": -718.4,
+      "max_drawdown_pct": -28.22,
+      "avg_hold_days": 14.0,
+      "top_symbols": {
+        "TSLA": 1,
+        "NFLX": 1,
+        "DIS": 1,
+        "BA": 1
+      }
+    },
+    "pattern": {
+      "trader_id": "T007",
+      "hourly_distribution": {
+        "9": 2,
+        "14": 2,
+        "10": 2,
+        "15": 2
+      },
+      "weekly_distribution": {
+        "Friday": 6,
+        "Tuesday": 2
+      },
+      "avg_position_size": 20421.06,
+      "most_active_hour": 9,
+      "most_active_day": "Friday"
+    }
+  }
+}
