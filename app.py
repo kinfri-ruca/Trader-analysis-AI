@@ -31,6 +31,14 @@ st.set_page_config(
 # CSS 스타일
 st.markdown("""
 <style>
+    /* Streamlit 메뉴 숨기기 */
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    
+    /* 하단 Streamlit 로고 숨기기 */
+    .css-1dp5vir {display: none;}
+    
     .main-header {
         font-size: 2.5rem;
         font-weight: bold;
