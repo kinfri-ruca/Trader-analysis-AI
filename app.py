@@ -35,24 +35,22 @@ st.set_page_config(
 
 # SEO 메타태그
 st.markdown("""
-<head>
-    <meta name="description" content="AI 기반 트레이더 성과 분석 대시보드. 50명의 트레이더 거래 패턴, 승률, 샤프 비율, MDD 등을 실시간으로 분석하고 인사이트를 제공합니다.">
-    <meta name="keywords" content="트레이더 분석, 주식 거래, AI 분석, 성과 대시보드, 샤프 비율, 승률, 트레이딩 인사이트">
-    <meta name="author" content="Trader Analytics Team">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Trader Analytics Dashboard - AI 기반 트레이더 성과 분석">
-    <meta property="og:description" content="실시간 트레이더 성과 분석 및 AI 코칭">
-    <meta property="og:image" content="https://raw.githubusercontent.com/YOUR_USERNAME/trader-analysis-dashboard/main/static/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Trader Analytics Dashboard">
-    <meta name="twitter:description" content="AI 기반 트레이더 성과 분석 대시보드">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/YOUR_USERNAME/trader-analysis-dashboard/main/static/og-image.jpg">
-</head>
+<meta name="description" content="AI 기반 트레이더 성과 분석 대시보드. 50명의 트레이더 거래 패턴, 승률, 샤프 비율, MDD 등을 실시간으로 분석하고 인사이트를 제공합니다.">
+<meta name="keywords" content="트레이더 분석, 주식 거래, AI 분석, 성과 대시보드, 샤프 비율, 승률, 트레이딩 인사이트">
+<meta name="author" content="Trader Analytics Team">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trader Analytics Dashboard - AI 기반 트레이더 성과 분석">
+<meta property="og:description" content="실시간 트레이더 성과 분석 및 AI 코칭">
+<meta property="og:image" content="https://raw.githubusercontent.com/YOUR_USERNAME/trader-analysis-dashboard/main/static/og-image.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trader Analytics Dashboard">
+<meta name="twitter:description" content="AI 기반 트레이더 성과 분석 대시보드">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/YOUR_USERNAME/trader-analysis-dashboard/main/static/og-image.jpg">
 """, unsafe_allow_html=True)
 
 # CSS 스타일
