@@ -443,7 +443,7 @@ def show_chatbot(chatbot):
     # 웰컴 메시지
     if not st.session_state.chat_history:
         st.markdown("""
-        ### 👋 안녕하세요! 트레이더 성과 분석 AI입니다.
+        ### 👋 트레이더 성과 분석 AI.
         
         50명의 트레이더 데이터를 분석하여 인사이트를 제공합니다.
         
