@@ -36,8 +36,12 @@ st.markdown("""
     header {visibility: hidden;}
     footer {visibility: hidden;}
     
-    /* 하단 Streamlit 로고 숨기기 */
+    /* 하단 Streamlit 로고 및 Manage app 숨기기 */
     .css-1dp5vir {display: none;}
+    [data-testid="stToolbar"] {display: none;}
+    .stDeployButton {display: none;}
+    button[kind="header"] {display: none;}
+    [data-testid="manage-app-button"] {display: none;}
     
     .main-header {
         font-size: 2.5rem;
