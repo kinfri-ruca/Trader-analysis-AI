@@ -44,13 +44,13 @@ st.markdown("""
 <meta property="og:type" content="website">
 <meta property="og:title" content="Trader Analytics Dashboard - AI 기반 트레이더 성과 분석">
 <meta property="og:description" content="실시간 트레이더 성과 분석 및 AI 코칭">
-<meta property="og:image" content="https://raw.githubusercontent.com/YOUR_USERNAME/trader-analysis-dashboard/main/static/og-image.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/kinfri-ruca/Trader-analysis-AI/main/static/og-image.jpg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Trader Analytics Dashboard">
 <meta name="twitter:description" content="AI 기반 트레이더 성과 분석 대시보드">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/YOUR_USERNAME/trader-analysis-dashboard/main/static/og-image.jpg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/kinfri-ruca/Trader-analysis-AI/main/static/og-image.jpg">
 """, unsafe_allow_html=True)
 
 # CSS 스타일
