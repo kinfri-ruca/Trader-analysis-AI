@@ -31,17 +31,23 @@ st.set_page_config(
 # CSS 스타일
 st.markdown("""
 <style>
-    /* Streamlit 메뉴 숨기기 */
-    #MainMenu {visibility: hidden;}
-    header {visibility: hidden;}
-    footer {visibility: hidden;}
+    /* Streamlit 메뉴 완전히 숨기기 */
+    #MainMenu {visibility: hidden !important; display: none !important;}
+    header {visibility: hidden !important; display: none !important;}
+    footer {visibility: hidden !important; display: none !important;}
     
-    /* 하단 Streamlit 로고 및 Manage app 숨기기 */
-    .css-1dp5vir {display: none;}
-    [data-testid="stToolbar"] {display: none;}
-    .stDeployButton {display: none;}
-    button[kind="header"] {display: none;}
-    [data-testid="manage-app-button"] {display: none;}
+    /* 모든 Streamlit 버튼 숨기기 */
+    .css-1dp5vir {display: none !important;}
+    [data-testid="stToolbar"] {display: none !important;}
+    .stDeployButton {display: none !important;}
+    button[kind="header"] {display: none !important;}
+    [data-testid="manage-app-button"] {display: none !important;}
+    .stActionButton {display: none !important;}
+    div[data-testid="stDecoration"] {display: none !important;}
+    
+    /* 햄버거 메뉴 숨기기 */
+    button[kind="headerNoPadding"] {display: none !important;}
+    section[data-testid="stSidebar"] > div:first-child {display: none !important;}
     
     .main-header {
         font-size: 2.5rem;
@@ -89,7 +95,7 @@ st.markdown("""
     /* 입력창 스타일 */
     [data-testid="stChatInput"] {
         position: fixed !important;
-        bottom: 0 !important;
+        bottom: 20px !important;
         left: 0 !important;
         right: 0 !important;
         padding: 1rem !important;
@@ -99,10 +105,18 @@ st.markdown("""
         box-shadow: 0 -2px 10px rgba(0,0,0,0.05) !important;
     }
     
+    /* 모바일에서 입력창 더 위로 */
+    @media (max-width: 767px) {
+        [data-testid="stChatInput"] {
+            bottom: 60px !important;
+        }
+    }
+    
     /* PC 화면만 사이드바 여백 적용 */
     @media (min-width: 768px) {
         [data-testid="stChatInput"] {
             left: 21rem !important;
+            bottom: 20px !important;
         }
         
         [data-testid="collapsedControl"] ~ div [data-testid="stChatInput"] {
