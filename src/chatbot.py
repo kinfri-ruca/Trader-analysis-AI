@@ -292,6 +292,13 @@ Trader: {t['profile']['name']} ({t.get('trader_id', 'N/A')})
         intent = self._analyze_intent(user_query)
         results = self._search_data(user_query, intent)
         
+        # 디버깅 로그
+        logging.info(f"Query: {user_query}")
+        logging.info(f"Intent: {intent}")
+        logging.info(f"Results count: {len(results) if results else 0}")
+        if results:
+            logging.info(f"First result keys: {list(results[0].keys())}")
+        
         if not results:
             return "[INFO] No matching traders."
         
