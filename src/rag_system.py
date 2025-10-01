@@ -136,6 +136,32 @@ class TradingKnowledgeBase:
         """모든 트레이더 정보"""
         return [{'trader_id': tid, **data} for tid, data in self.data.items()]
     
+    def find_similar_names(self, query: str, top_n: int = 3) -> List[str]:
+        """유사한 이름 찾기 (간단한 문자열 매칭)"""
+        query_clean = query.strip()
+        
+        # 모든 트레이더 이름 추출
+        all_names = [info['profile']['name'] for info in self.data.values()]
+        
+        # 유사도 계산 (공통 문자 개수)
+        similarities = []
+        for name in all_names:
+            # 공통 문자 개수
+            common_chars = sum(1 for c in query_clean if c in name)
+            # 길이 차이 페널티
+            length_diff = abs(len(name) - len(query_clean))
+            # 점수 = 공통문자 - 길이차이*0.5
+            score = common_chars - (length_diff * 0.5)
+            
+            similarities.append((name, score))
+        
+        # 점수 높은 순으로 정렬
+        similarities.sort(key=lambda x: x[1], reverse=True)
+        
+        # 상위 N개 반환 (점수 > 0만)
+        result = [name for name, score in similarities[:top_n] if score > 0]
+        return result
+    
     def build_context(self, query: str, search_results: List[Dict]) -> Dict:
         """검색 결과를 컨텍스트로 변환"""
         if not search_results:

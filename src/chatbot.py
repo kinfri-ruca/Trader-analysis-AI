@@ -153,6 +153,10 @@ class TraderAnalysisChatbot:
         
         # 트레이더 조회
         elif intent_type == 'trader_query':
+            # "전체", "명단", "요약" 키워드 처리
+            if any(w in query.lower() for w in ['전체', '명단', '리스트', '목록', '요약', 'all', 'list', 'summary']):
+                return self.kb.get_all_traders()
+            
             # T001, T002 등 ID 추출
             import re
             trader_id_match = re.search(r'T\d{3}', query.upper())
@@ -167,6 +171,23 @@ class TraderAnalysisChatbot:
             if result:
                 return [result]
             
+            # 검색 실패 - 이름 추출하여 유사 이름 찾기
+            import re
+            # 한글 이름 추출 (2-4글자)
+            name_match = re.search(r'[가-힣]{2,4}', query)
+            if name_match:
+                search_name = name_match.group()
+                # 유사 이름 찾기
+                similar_names = self.kb.find_similar_names(search_name, top_n=3)
+                
+                if similar_names:
+                    # 유사 이름이 있으면 특별한 응답 생성
+                    return [{
+                        'not_found': True,
+                        'search_name': search_name,
+                        'similar_names': similar_names
+                    }]
+            
             # 검색 실패 시 필터 적용
             if filter_type == 'morning':
                 return self.kb.search_by_time_pattern((9, 11))
@@ -176,13 +197,44 @@ class TraderAnalysisChatbot:
                 # 안정적 = 낮은 MDD
                 return self.kb.search_by_metric_complex('max_drawdown_pct', 'asc', 3)
             
-            return []
+            # 아무것도 없으면 전체 반환
+            return self.kb.get_all_traders()
         
         # 조언 (전체 데이터 필요)
         else:
             return self.kb.get_all_traders()
     
     def _build_prompt(self, query: str, context: List[Dict]) -> str:
+        # 유사 이름 제안 처리
+        if context and len(context) == 1 and context[0].get('not_found'):
+            search_name = context[0]['search_name']
+            similar_names = context[0]['similar_names']
+            
+            prompt = f"""You are a trading analyst. Answer in Korean.
+
+[SITUATION]
+The trader "{search_name}" was NOT found in the database.
+
+[SIMILAR NAMES]
+{', '.join(similar_names)}
+
+[QUESTION]
+{query}
+
+[INSTRUCTIONS]
+1. Answer in Korean
+2. Explain that "{search_name}" is not in the database
+3. Suggest the similar names found: {', '.join(similar_names)}
+4. Ask if the user meant one of these traders
+5. Be helpful and professional
+
+Example:
+"죄송합니다. '{search_name}' 트레이더는 데이터베이스에 없습니다.
+유사한 이름으로는 {', '.join(similar_names)} 등이 있습니다.
+혹시 이 중 한 분을 찾으시나요?"
+"""
+            return prompt
+        
         # 디버깅
         logging.info(f"Context size: {len(context)}")
         if context:
