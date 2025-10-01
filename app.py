@@ -79,7 +79,6 @@ st.markdown("""
     
     /* 햄버거 메뉴 숨기기 */
     button[kind="headerNoPadding"] {display: none !important;}
-    section[data-testid="stSidebar"] > div:first-child {display: none !important;}
     
     .main-header {
         font-size: 2.5rem;
