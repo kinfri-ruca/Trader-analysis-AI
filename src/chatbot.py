@@ -84,7 +84,8 @@ class TraderAnalysisChatbot:
             result['type'] = 'comparison'
         elif any(w in query_lower for w in ['조언', '제안', '개선', 'advice', 'suggest', 'improve', '배워야', '학습']):
             result['type'] = 'advice'
-        elif any(w in query_lower for w in ['패턴', '스타일', 'pattern', 'style', 'trend', '시간', '요일']) and not result['metric']:
+        elif any(w in query_lower for w in ['패턴', '스타일', 'pattern', 'style', 'trend', '시간', '요일']) or result['filter'] in ['morning', 'thursday']:
+            # 패턴 키워드 또는 시간/요일 필터 → pattern 타입 강제
             result['type'] = 'pattern'
         elif any(w in query_lower for w in ['상위', '순위', '랭킹', 'top', 'rank', 'best', '가장']) or (result['metric'] and result['filter']):
             result['type'] = 'ranking'
@@ -92,10 +93,19 @@ class TraderAnalysisChatbot:
         return result
     
     def _search_data(self, query: str, intent: Dict) -> List[Dict]:
-        """강화된 검색 로직"""
+        """강화된 검색 로직 - 패턴 우선"""
         intent_type = intent['type']
         metric = intent['metric']
         filter_type = intent['filter']
+        
+        # 패턴 검색 우선 (이름보다 먼저)
+        if intent_type == 'pattern' or filter_type in ['morning', 'thursday']:
+            if filter_type == 'morning':
+                return self.kb.search_by_time_pattern((9, 11))
+            elif filter_type == 'thursday':
+                return self.kb.search_by_weekday('Thursday')
+            else:
+                return self.kb.get_all_traders()
         
         # 랭킹 검색
         if intent_type == 'ranking':
@@ -104,15 +114,6 @@ class TraderAnalysisChatbot:
             
             order = 'asc' if filter_type == 'lowest' else 'desc'
             return self.kb.search_by_metric_complex(metric, order, 3)
-        
-        # 패턴 검색
-        elif intent_type == 'pattern':
-            if filter_type == 'morning':
-                return self.kb.search_by_time_pattern((9, 11))
-            elif filter_type == 'thursday':
-                return self.kb.search_by_weekday('Thursday')
-            else:
-                return self.kb.get_all_traders()
         
         # 비교
         elif intent_type == 'comparison':

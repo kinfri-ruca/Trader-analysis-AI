@@ -37,5 +37,8 @@ docs/
 test_*.py
 *_test.py
 
+# Session docs
 mvp*.md
+session_*.md
+check_models.py
 
